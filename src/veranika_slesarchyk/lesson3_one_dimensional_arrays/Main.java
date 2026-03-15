@@ -1,4 +1,4 @@
-package veranika_slesarchyk.homework_lesson3_one_dimensional_arrays;
+package veranika_slesarchyk.lesson3_one_dimensional_arrays;
 
 public class Main {
     public static void main(String[] args) {

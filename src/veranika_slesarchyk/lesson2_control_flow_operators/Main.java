@@ -1,4 +1,4 @@
-package veranika_slesarchyk.homework_lesson2_control_flow_operators;
+package veranika_slesarchyk.lesson2_control_flow_operators;
 
 public class Main {
     public static void main(String[] args) {

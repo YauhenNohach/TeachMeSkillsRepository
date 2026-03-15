@@ -1,4 +1,4 @@
-package veranika_slesarchyk.homework_lesson1_variables;
+package veranika_slesarchyk.lesson1_variables;
 
 public class Main {
     public static void main(String[] args) {
