@@ -39,7 +39,7 @@ TeachMeSkillsRepository
 │
 ├── yauhen_nohach
 │   │
-│   ├── lesson1_introduction_to_java
+│   ├── lesson1_variables
 │   ├── lesson2_control_flow_operators
 │   ├── lesson3_one_dimensional_arrays
 │   ├── lesson4_multidimensional_arrays
@@ -56,4 +56,5 @@ TeachMeSkillsRepository
 Students must upload their **homework assignments** to the corresponding lesson folders.
 
 🚀 How to submit homework
+
 Review conducts the co-creator of repository and merge as well
