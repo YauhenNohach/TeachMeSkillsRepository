@@ -34,23 +34,24 @@ lesson12_collections_part2
 ## Example Structure
 
 
+```
 TeachMeSkillsRepository
 │
 ├── yauhen_nohach
-│ │
-│ ├── lesson1_introduction_to_java
-│ ├── lesson2_control_flow_operators
-│ ├── lesson3_one_dimensional_arrays
-│ ├── lesson4_multidimensional_arrays
-│ ├── lesson5_repositories
-│ ├── lesson6_classes_and_objects
-│ ├── lesson7_interfaces_and_abstract_classes
-│ ├── lesson8_oop_principles
-│ ├── lesson9_exceptions
-│ ├── lesson10_string_processing
-│ ├── lesson11_collections_part1
-│ └── lesson12_collections_part2
-
+│   │
+│   ├── lesson1_introduction_to_java
+│   ├── lesson2_control_flow_operators
+│   ├── lesson3_one_dimensional_arrays
+│   ├── lesson4_multidimensional_arrays
+│   ├── lesson5_repositories
+│   ├── lesson6_classes_and_objects
+│   ├── lesson7_interfaces_and_abstract_classes
+│   ├── lesson8_oop_principles
+│   ├── lesson9_exceptions
+│   ├── lesson10_string_processing
+│   ├── lesson11_collections_part1
+│   └── lesson12_collections_part2
+```
 
 Students must upload their **homework assignments** to the corresponding lesson folders.
 
