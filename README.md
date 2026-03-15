@@ -55,12 +55,5 @@ TeachMeSkillsRepository
 
 Students must upload their **homework assignments** to the corresponding lesson folders.
 
-Если хочешь, могу ещё сделать более профессиональную версию README (как в настоящих GitHub проектах) с разделами:
-
-📌 Rules for students
-
-📂 Folder naming rules
-
 🚀 How to submit homework
-
-🛠 Git workflow (branch → commit → push)
+Review conducts the co-creator of repository and merge as well
