@@ -16,6 +16,21 @@ public class Main {
         tree5.height = 47.1;
         tree6.height = 12.8;
 
+        tree1.name = "Oak";
+        tree2.name = "Pine";
+        tree3.name = "Maple";
+        tree4.name = "Birch";
+        tree5.name = "Willow";
+        tree6.name = "Baobab";
+
+        tree1.returnTreeInfo(tree1.name, tree1.height);
+        tree2.returnTreeInfo(tree2.name, tree2.height);
+        tree3.returnTreeInfo(tree3.name, tree3.height);
+        tree4.returnTreeInfo(tree4.name, tree4.height);
+        tree5.returnTreeInfo(tree5.name, tree5.height);
+        tree6.returnTreeInfo(tree6.name, tree6.height);
+
+
 
         Tree[] trees = {tree1, tree2, tree3, tree4, tree5, tree6};
 
