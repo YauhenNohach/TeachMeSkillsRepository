@@ -1,6 +1,6 @@
-package lesson1_variables;
+package YanaRudinskaya;
 
-public class varuables {
+public class Lesson1_varuables {
     public static void main(String[] args) {
 
 

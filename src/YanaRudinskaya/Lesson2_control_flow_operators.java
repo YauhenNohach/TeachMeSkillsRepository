@@ -1,8 +1,8 @@
-package lesson2_control_flow_operators;
+package YanaRudinskaya;
 
 import java.util.Scanner;
 
-public class control_flow_operators {
+public class Lesson2_control_flow_operators {
     public static void main(String[] args) {
 
 

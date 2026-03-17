@@ -1,6 +1,6 @@
-package lesson3_one_dimensional_arrays;
+package YanaRudinskaya;
 
-public class one_dimensional_arrays {
+public class Lesson3_one_dimensional_arrays {
     public static void main(String[] args) {
 
 //        1) Дан массив целых чисел.

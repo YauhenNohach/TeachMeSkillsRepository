@@ -1,4 +1,4 @@
-package lesson5_repositories;
+package YanaRudinskaya;
 
 public class repositories {
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
-package lesson4_multidimensional_arrays;
+package YanaRudinskaya;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class multidimensional_arrays {
+public class Lesson4_multidimensional_arrays {
     public static void main(String[] args) {
         System.out.println("ЗАДАЧА 0: ");
         System.out.println("Введите число, на которое будет увеличен каждый элемент массива ");
