@@ -16,6 +16,7 @@ public class Main {
 
 
         System.out.println(bereza.height);
+        System.out.println("changes");
 //
 //        int[] numbers = new int[2];
 //        numbers[0] = 123;
