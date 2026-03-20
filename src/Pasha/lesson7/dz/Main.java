@@ -4,11 +4,11 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Mammals lion = new Mammals("Lion", "Panthera leo", 4, 190.5, "meat", 8);
-        Birds ostrich = new Birds("Ostrich", 97.3, 20, "Struthio camelus", false, "grass");
-        Reptiles reptile = new Reptiles("Iguana", "lizard", 6, 3.5, "plants", 39);
-        Carnivores wolf = new Carnivores("Wolf", "Canis lupus", 7, 25, "meat");
-        Graminivores horse = new Graminivores("Horse", 105.5, 15, "Aptenodytes forsteri", "grass");
+        Mammal lion = new Mammal("Lion", "Panthera leo", 4, 190.5, "meat", 8);
+        Bird ostrich = new Bird("Ostrich", 97.3, 20, "Struthio camelus", false, "grass");
+        Reptile reptile = new Reptile("Iguana", "lizard", 6, 3.5, "plants", 39);
+        Carnivore wolf = new Carnivore("Wolf", "Canis lupus", 7, 25, "meat");
+        Graminivore horse = new Graminivore("Horse", 105.5, 15, "Aptenodytes forsteri", "grass");
 
         Animal[] animals = {lion, ostrich, reptile, wolf, horse};
 

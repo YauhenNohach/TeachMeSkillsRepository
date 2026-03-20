@@ -1,9 +1,9 @@
 package Pasha.lesson7.dz;
 
-class Mammals extends Carnivores {
+class Mammal extends Carnivore {
     double howManyMonthBreastfeeding;
 
-    protected Mammals(String name, String species, int age, double weight, String food, double howManyMonthBreastfeeding) {
+    protected Mammal(String name, String species, int age, double weight, String food, double howManyMonthBreastfeeding) {
         super(name, species, age, weight, food);
         this.howManyMonthBreastfeeding = howManyMonthBreastfeeding;
     }
