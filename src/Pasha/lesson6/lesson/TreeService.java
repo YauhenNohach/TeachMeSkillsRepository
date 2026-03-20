@@ -1,4 +1,4 @@
-package pasha.lesson6.lesson;
+package Pasha.lesson6.lesson;
 
 public class TreeService {
 

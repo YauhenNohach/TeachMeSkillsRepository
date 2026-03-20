@@ -1,4 +1,4 @@
-package pasha.lesson7.lesson;
+package Pasha.lesson7.lesson;
 
 public class Cars extends Car {
     int costs;
