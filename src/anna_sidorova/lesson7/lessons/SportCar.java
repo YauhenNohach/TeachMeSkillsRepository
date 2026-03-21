@@ -1,4 +1,6 @@
-package yauhen_nohach.lesson7_interfaces_and_abstract_classes.lesson;
+package anna_sidorova.lesson7.lessons;
+
+import yauhen_nohach.lesson7_interfaces_and_abstract_classes.lesson.Car;
 
 public class SportCar extends Car {
 
