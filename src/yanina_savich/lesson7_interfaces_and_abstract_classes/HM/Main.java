@@ -34,9 +34,15 @@ public class Main {
         System.out.println("----7----");
         oldAnimals(animals);
         System.out.println("----8----");
-        heaviestAnimal(animals);
+        Animal big = heaviestAnimal(animals);
+        System.out.println("Heaviest: " + big.getInfo());
         System.out.println("----9----");
-        firstAnimalIsMoreThan6(animals);
+        Animal animal6Kg = firstAnimalIsMoreThan6(animals);
+        if (animal6Kg != null){
+            System.out.println("Found: " + animal6Kg.getInfo());
+        } else {
+            System.out.println("No animal with 6 kg");
+        }
         System.out.println("----10----");
         boolean result = isOldAnimals(animals);
         System.out.println("Are there any animals older than 6 years old -> " + result);

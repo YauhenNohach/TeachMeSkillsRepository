@@ -15,7 +15,7 @@ public class Main {
 
         increaseCostForCars(cars);
 
-        Car foundCar = Car.findByModel(cars, "BMW");
+        Car foundCar = Service.findByModel(cars, "BMW");
         if (foundCar != null) {
             System.out.println("Найдена:" + foundCar);
         } else {

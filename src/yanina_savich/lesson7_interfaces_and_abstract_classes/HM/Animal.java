@@ -71,22 +71,22 @@ public abstract class Animal {
             }
         }
     }
-    public static void heaviestAnimal(Animal[] animals){
+    public static Animal heaviestAnimal(Animal[] animals){
         Animal heaviest = animals[0];
         for (int i = 1; i < animals.length; i++) {
             if (animals[1].weight > heaviest.weight){
                 heaviest = animals[i];
             }
         }
-        System.out.println("The heaviest animal is -> " + heaviest.getInfo());
+        return heaviest;
     }
-    public static void firstAnimalIsMoreThan6(Animal[] animals) {
+    public static Animal firstAnimalIsMoreThan6(Animal[] animals) {
         for (int i = 0; i < animals.length; i++) {
             if (animals[i].weight >= 6) {
-                System.out.println("The first animal is more 6kg -> " + animals[i].getInfo());
-                break;
+                return animals[i];
             }
         }
+        return null;
     }
     public static boolean isOldAnimals(Animal[] animals){
         for (int i = 0; i < animals.length; i++) {
