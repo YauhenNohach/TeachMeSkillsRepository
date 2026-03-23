@@ -15,4 +15,19 @@ public class SportCar extends Car {
 
     public SportCar() {
     }
+
+    @Override
+    public void car(int speed) {
+
+    }
+
+    @Override
+    public int move() {
+        return 0;
+    }
+
+//    @Override
+//    public void drive(){
+//        System.out.println("I drive sportCar");
+//    }
 }
