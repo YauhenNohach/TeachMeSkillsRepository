@@ -1,5 +1,7 @@
 package Pasha.lesson7.lesson;
 
+import Pasha.lesson7.lesson.CarPark;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -46,11 +48,11 @@ public class Main {
         System.out.println("\nTask 3");
         System.out.println("Updating Costs for CarPark where Speed > 100");
         for (CarPark car : carPark) {
-            if (car.costs > 100) {
-                int oldCost = car.costs;
-                car.costs += 150;
-                System.out.println("\t" + "* " + car.model + ": Speed is " + car.speed + " -> costs increased from " + oldCost + " to " + car.costs);
-            }
+//            if (car.costs > 100) {
+//                int oldCost = car.costs;
+//                car.costs += 150;
+//                System.out.println("\t" + "* " + car.model + ": Speed is " + car.speed + " -> costs increased from " + oldCost + " to " + car.costs);
+//            }
         }
     }
 
