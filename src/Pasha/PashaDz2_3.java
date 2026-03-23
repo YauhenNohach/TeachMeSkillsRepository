@@ -1,3 +1,5 @@
+package Pasha;
+
 import java.util.Arrays;
 
 public class PashaDz2_3 {
