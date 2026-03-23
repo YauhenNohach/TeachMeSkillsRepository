@@ -1,21 +1,28 @@
 package yauhen_nohach.lesson6_classes_and_objects.lesson;
 
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         Tree sosna = new Tree("sosna");
-        sosna.height = 123.54;
+        System.out.println(LocalDate.now());
+//        sosna.height = 123.54;
+//        sosna.setHeight(-1);
+        System.out.println(sosna.getHeight());
+
+
         sosna.printInfoAboutTree();
         String nameTopol = "topol";
         Tree topol = new Tree(nameTopol, 345.7);
         topol.printInfoAboutTree();
 
         Tree bereza = new Tree(); // экземпляр класса / создание нового обьекта
-        bereza.name = "bereza";
-        bereza.height = 123.6;
+//        bereza.name = "bereza";
+//        bereza.height = 123.6;
 //        bereza.season = "summer";
 
 
-        System.out.println(bereza.height);
+//        System.out.println(bereza.height);
         System.out.println("changes");
 //
 //        int[] numbers = new int[2];
@@ -25,7 +32,7 @@ public class Main {
 //        int[] numbers2 = {1, 2};
 
         Tree dub = new Tree();
-        dub.name = "dub";
+//        dub.name = "dub";
 
         Tree[] trees = new Tree[2];
         trees[0] = bereza;
@@ -36,7 +43,7 @@ public class Main {
         double sumTree = sumTreesHeights(bereza, dub);
 
         Tree el = new Tree();
-        el.name = "el";
+//        el.name = "el";
 
         double height = 123.9;
         String name = "jenya";
@@ -72,19 +79,19 @@ public class Main {
     }
 
     public static double sumTreesHeights(Tree tree1, Tree tree2) {
-        double sum = tree1.height + tree2.height;
-        return sum;
+//        double sum = tree1.height + tree2.height;
+        return 0.0;
     }
 
     //                                  Tree[] trees1 = {bereza, dub};
     public static Tree findTreeWithMaxHeight(Tree[] trees){
         Tree maxTree = trees[0];
-        for (int i = 1; i < trees.length; i++) {
-            //  bereza
-            if (trees[i].height > maxTree.height){
-                maxTree = trees[i];
-            }
-        }
+//        for (int i = 1; i < trees.length; i++) {
+//            //  bereza
+////            if (trees[i].height > maxTree.height){
+////                maxTree = trees[i];
+//            }
+//        }
         return maxTree;
     }
 }
