@@ -8,4 +8,9 @@ public class MiniBus extends Bus{
     public MiniBus(String model, int year, int speed, int countPlaces) {
         super(model, year, speed, countPlaces);
     }
+
+    @Override
+    public void drive(){
+        System.out.println("I drive Minibus");
+    }
 }
