@@ -1,6 +1,6 @@
 package yauhen_nohach.lesson7_interfaces_and_abstract_classes.lesson;
 
-public abstract class Car {
+public abstract class Car implements IDrive, ICar{
 
     String model;
     int year;
@@ -16,10 +16,8 @@ public abstract class Car {
     }
 
     public void drive(){
-        System.out.println("I drive car");
+        System.out.println("I drive abstract car");
     }
-
-    public abstract void race();
 
     @Override
     public String toString() {
