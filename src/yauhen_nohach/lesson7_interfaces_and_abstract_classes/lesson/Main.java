@@ -13,12 +13,17 @@ public class Main {
 //        bus.countPlaces;
 
         Car bus2 = new Bus("bus2", 1699, 375, 13);
+        bus2.drive();
 
         Bus miniBus = new MiniBus();
+        miniBus.drive();
+
         Car miniBus2 = new MiniBus();
 
 
         SportCar sportCar = new SportCar();
+        sportCar.drive();
+
 
 //        Bus[] buses = new Bus[3];
 //        buses[0] = bus;
@@ -36,7 +41,32 @@ public class Main {
             if (car != null) {}
         }
 
+        sumNumbers(1, 3);
+        sumNumbers(1, "sdgdfg");
+
     }
+
+    private static void sumNumbers(int num1, int num2){
+        System.out.println(num1 + num2);
+    }
+
+    private static void sumNumbers(int num1){
+        System.out.println(num1);
+    }
+
+    private static double sumNumbers(double num1, double num2){
+        return  num1 + num2;
+    }
+
+    private static double sumNumbers(int num1, double num2){
+        return  num1 + num2;
+    }
+
+    private static String sumNumbers(int num1, String num2){
+        return  num1 + "" + num2;
+    }
+
+
 
 
 }
