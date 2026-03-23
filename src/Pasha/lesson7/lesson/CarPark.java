@@ -6,4 +6,11 @@ public class CarPark extends Car {
         super(model, year, speed);
         this.costs = costs;
     }
+    public static void main(String[] args) {
+        CarPark bmw = new CarPark("bmw", 1990, 150, 2000);
+        int speed = bmw.getSpeed();
+        System.out.println(speed);
+        bmw.setSpeed(190);
+        System.out.println(bmw.getSpeed());
+    }
 }
