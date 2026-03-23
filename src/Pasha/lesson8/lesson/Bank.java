@@ -1,13 +1,14 @@
 package Pasha.lesson8.lesson;
 
-public class Bank implements IBank{
-    String name;
-    double transferFeePercent;
+public class Bank implements IBank {
+    private String name;
+    private double transferFeePercent;
 
-    public Bank(String name, double transferFeePercent){
+    public Bank(String name, double transferFeePercent) {
         this.name = name;
         this.transferFeePercent = transferFeePercent;
-    };
+    }
+
     public String getName() {
         return name;
     }
