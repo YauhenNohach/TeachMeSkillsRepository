@@ -30,7 +30,7 @@ public class Lesson7 {
     // 2)создать метод, который найдёт автомобили до 1992 и выведет их все на экран
     static void printCarsBefore1992(Car[] cars) {
         for (Car car : cars) {
-            if (car.year < 1992) {
+            if (car.getYear() < 1992) {
                 System.out.println(car);
             }
         }
@@ -39,7 +39,7 @@ public class Lesson7 {
     //3) добавить новое поле в класс Car "стоимость авто". Cоздать метод, который изменит стоимость тех автомобилей, которые разгоняются более 100 на 150 рублей
     static void increasePriceForFastCars(Car[] cars) {
         for (Car car : cars) {
-            if (car.speed > 100) {
+            if (car.getSpeed() > 100) {
                 car.price += 150;
                 System.out.println(car);
             }
@@ -52,7 +52,7 @@ public class Lesson7 {
         System.out.println("Введите модель: ");
         String model = scanner.nextLine().toUpperCase();
         for (Car car : cars) {
-            if (car.model.equals(model)) {
+            if (car.getModel().equals(model)) {
                 System.out.println("найден автомобиль " + car);
                 return;
             }
