@@ -21,7 +21,17 @@ public class Main {
         Car miniBus2 = new MiniBus();
 
 
-        SportCar sportCar = new SportCar();
+        SportCar sportCar = new SportCar() {
+            @Override
+            public int move() {
+                return 0;
+            }
+
+            @Override
+            public void car(int speed) {
+
+            }
+        };
         sportCar.drive();
 
 
@@ -36,9 +46,9 @@ public class Main {
         cars[2] = sportCar;
 
 
-
         for (Car car : cars) {
-            if (car != null) {}
+            if (car != null) {
+            }
         }
 
         sumNumbers(1, 3);
@@ -46,27 +56,25 @@ public class Main {
 
     }
 
-    private static void sumNumbers(int num1, int num2){
+    private static void sumNumbers(int num1, int num2) {
         System.out.println(num1 + num2);
     }
 
-    private static void sumNumbers(int num1){
+    private static void sumNumbers(int num1) {
         System.out.println(num1);
     }
 
-    private static double sumNumbers(double num1, double num2){
-        return  num1 + num2;
+    private static double sumNumbers(double num1, double num2) {
+        return num1 + num2;
     }
 
-    private static double sumNumbers(int num1, double num2){
-        return  num1 + num2;
+    private static double sumNumbers(int num1, double num2) {
+        return num1 + num2;
     }
 
-    private static String sumNumbers(int num1, String num2){
-        return  num1 + "" + num2;
+    private static String sumNumbers(int num1, String num2) {
+        return num1 + "" + num2;
     }
-
-
 
 
 }

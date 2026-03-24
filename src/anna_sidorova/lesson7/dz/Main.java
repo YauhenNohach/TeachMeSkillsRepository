@@ -8,6 +8,9 @@ public class Main {
         Animal animal3 = new Bird("duck", 1, 4.9, 4);
         Animal animal4 = new Reptile("lizard", 2, 1.9, false);
         Animal animal5 = new Mammal("bear", 5, 345, 45);
+        Mammal mammal = new Mammal("horse", 3, 455, 5);
+        mammal.setAmountOfMilk(4);
+        mammal.getAmountOfMilk();
 
         Animal[] allAnimals = new Animal[5];
         allAnimals[0] = animal1;
