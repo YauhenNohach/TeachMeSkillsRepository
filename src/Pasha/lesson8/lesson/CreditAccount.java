@@ -1,10 +1,10 @@
 package Pasha.lesson8.lesson;
 
-public class CreditAccount extends Account{
+public class CreditAccount extends Account {
     double creditLimit;
 
-    public CreditAccount(double balance, Bank bank, double creditLimit) {
-        super(balance, bank);
+    protected CreditAccount(double balance, Bank bank, double creditLimit, AccountType accountCurrency) {
+        super(balance, bank, accountCurrency);
         this.creditLimit = creditLimit;
     }
 }
