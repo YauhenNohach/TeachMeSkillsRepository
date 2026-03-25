@@ -75,6 +75,9 @@ public class Tree {
     }
 
     public void setHeight(double height) {
+        if (height < 0){
+            throw new IllegalArgumentException("height must be more than 0");
+        }
         this.height = height;
     }
 
