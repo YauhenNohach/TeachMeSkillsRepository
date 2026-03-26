@@ -17,12 +17,12 @@ public abstract class Animal {
     }
 
     // методы
-    public abstract String makeSound(); // выводит звук, который издаёт животное (например, "Some sound")
+    public abstract String makeSound();
 
-    public abstract String eat(); //  принимает название еды и выводит, что животное ест
+    public abstract String eat();
 
-    public void getInfo() {
-        System.out.printf("Name: %s \tAge: %d\nWeight: %.1f\n", name, age, weight); //возвращает строку с информацией о животном
+    public String getInfo() {
+        return "Имя питомца: " + name + ", возраст (лет): " + age + " , вес (кг): " + weight;
     }
 
     //  методы для выполнения заданий

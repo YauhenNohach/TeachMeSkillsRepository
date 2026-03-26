@@ -36,11 +36,11 @@ public class Main {
         findCarByModel(allCars);
 
 //  ЖИВОТНЫЕ
-        GrassAnimal animal1 = new GrassAnimal("Zuza", 1, 0.1, "clover");
-        Predator animal2 = new Predator("Tomas", 2, 1, "mouse");
-        Bird animal3 = new Bird("Kesha", 3, 0.2, "grass", 0.1);
-        Reptile animal4 = new Reptile("Slider", 1, 0.5, "mouse", true);
-        Mammal animal5 = new Mammal("Peach", 5, 8, "valerian", 31.2);
+        GrassAnimal animal1 = new GrassAnimal("Жужа", 1, 0.1, "clover");
+        Predator animal2 = new Predator("Томас", 2, 1, "mouse");
+        Bird animal3 = new Bird("Кеша", 9, 0.2, "grass", 0.1);
+        Reptile animal4 = new Reptile("Слайдер", 1, 8, "mouse", true);
+        Mammal animal5 = new Mammal("Персик", 6, 8, "valerian", 31.2);
 
         Animal[] allAnimal = new Animal[5];
         allAnimal[0] = animal1;
@@ -50,10 +50,48 @@ public class Main {
         allAnimal[4] = animal5;
 
 // Задание 1: Изменить вес у одного животного (метод принимает животное и новый вес и меняет его)
+        System.out.println("== Задание 1. Животные. Меняем вес Кеши ==");
+        System.out.println("Изначальный вес : " + animal3.getWeight());
         animal3.setWeight(0.5);
-        System.out.println(animal3.getWeight());
+        System.out.println("Вес после изменений :" + animal3.getWeight());
+
+
 //  Задание 2. Сумма возраста всех животных
+        System.out.println("== Задание 2. Сумма возраста всех животных ==");
         calculateTotalAge(allAnimal);
+
+// Задание 3. Метод принимает searchName и массив животных, и по указанному парметру находит животное
+        System.out.println("== Задание 3. Ищем, есть ли среди наших животных Жужа ==");
+        findAnimal("Жужа", allAnimal);
+
+//  Задание 4. Метод принимает 2 животных и выводит какое из них больше
+        System.out.println("== Задание 4. Сравниваем двух животных и узнаём, кто весит больше ==");
+        compareAnimals(animal3, animal5);
+
+//  Задание 5: найти средний вес всех животных
+        System.out.println("== Задание 5. ищем средний вес всех животных ==");
+        printAverageWeight(allAnimal);
+
+//  Задание 6: Посчитать животных тяжелее среднего
+        System.out.println("== Задание 6. Считаем животных тяжелее среднего ==");
+        printHeavierThanAverage(allAnimal);
+
+// Задание 7: Вывести только взрослых животных (старше 6 лет)
+        System.out.println("== Задание 7. Список животных старше 6 лет ==");
+        printAdultAnimals(allAnimal);
+
+//  Задание 8: Поиск самого тяжёлого животного
+        System.out.println("== Задание 8. Ищем самого тяжёлого животного ==");
+        findHeaviestAnimal(allAnimal);
+
+//  Задание 9: Найти первое подходящее животное, которое больше 6 кг
+        System.out.println("== Задание 9. Первое подходящее животное, которое больше 6 кг ==");
+        findFirstHeavyAnimal(allAnimal);
+
+//  Задание 10: Проверить есть ли старые животные (больше 6 лет и вернуть true или false)
+        System.out.println("== Задание 10. Проверяем, есть ли животное старичок, которому больше 6 лет ==");
+        boolean result = OldAnimals(allAnimal);
+        System.out.println("Есть ли в списке старые животные? " + result);
 
     }
 
@@ -94,19 +132,145 @@ public class Main {
 
     }
 
-// ЗАДАНИЯ С ЖИВОТНЫМИ
-// Задание 2: Сумма возраста всех животных
-public static void calculateTotalAge(Animal[] allAnimal) {
-    int totalAge = 0; // Наша "копилка"
+    // ЗАДАНИЯ С ЖИВОТНЫМИ
+    public static void calculateTotalAge(Animal[] allAnimal) {
+        int totalAge = 0; // Наша "копилка"
 
-    for (int i = 0; i < allAnimal.length; i++) {
-        // Проверяем, что в ячейке не пусто
-        if (allAnimal[i] != null) {
-            totalAge += allAnimal[i].getAge(); // Прибавляем возраст текущего животного
+        for (int i = 0; i < allAnimal.length; i++) {
+            // Проверяем, что в ячейке не пусто
+            if (allAnimal[i] != null) {
+                totalAge += allAnimal[i].getAge(); // Прибавляем возраст текущего животного
+            }
+        }
+        System.out.println("Общий возраст всех пациентов вет.клиники: " + totalAge + " лет");
+    }
+
+    public static void findAnimal(String searchName, Animal[] allAnimal) {
+        for (int i = 0; i < allAnimal.length; i++) {
+            if (allAnimal[i] != null) {
+                if (allAnimal[i].getName().equalsIgnoreCase(searchName)) {
+                    System.out.println("Найдено: " + allAnimal[i].getInfo());
+                    return;
+                }
+            }
+        }
+        System.out.println("Животное '" + searchName + "' не найдено.");
+    }
+
+    public static void compareAnimals(Animal a1, Animal a2) {
+        if (a1 == null || a2 == null) {
+            System.out.println("Одно из животных отсутствует для сравнения.");
+            return;
+        }
+        if (a1.getWeight() > a2.getWeight()) {
+            System.out.println("Животное " + a1.getName() + " тяжелее, чем " + a2.getName());
+        } else if (a1.getWeight() < a2.getWeight()) {
+            System.out.println("Животное " + a2.getName() + " тяжелее, чем " + a1.getName());
+        } else {
+            System.out.println("Животные " + a1.getName() + " и " + a2.getName() + " весят одинаково.");
         }
     }
-    System.out.println("Общий возраст всех пациентов вет.клиники: " + totalAge + " лет");
-}
+
+    public static void printAverageWeight(Animal[] animals) {
+        if (animals == null || animals.length == 0) {
+            System.out.println("Список животных пуст.");
+            return;
+        }
+        double sum = 0;
+        int count = 0;
+        for (Animal animal : animals) {
+            if (animal != null) {
+                sum += animal.getWeight();
+                count++;
+            }
+        }
+        if (count > 0) {
+            double average = sum / count;
+            System.out.printf("Средний вес %d животных: %.2f кг%n", count, average);
+        } else {
+            System.out.println("Список животных пуст.");
+        }
+    }
 
 
+    public static void printHeavierThanAverage(Animal[] animals) {
+        if (animals == null || animals.length == 0) {
+            System.out.println("Список животных пуст.");
+        }
+        double totalWeight = 0;
+        int count = 0;
+        for (Animal animal : animals) {
+            if (animal != null) {
+                totalWeight += animal.getWeight();
+                count++;
+            }
+        }
+        if (count == 0) {
+            System.out.println("В списке нет животных.");
+        }
+        double average = totalWeight / count;
+        System.out.printf("Средний вес: %.2f кг%n", average);
+        System.out.println("Животные, чей вес выше среднего:");
+        int heavierCount = 0;
+        for (Animal animal : animals) {
+            if (animal != null && animal.getWeight() > average) {
+                System.out.println("- " + animal.getName() + ": " + animal.getWeight() + " кг");
+                heavierCount++;
+            }
+        }
+        System.out.println("Всего таких животных: " + heavierCount);
+    }
+
+    public static void printAdultAnimals(Animal[] animals) {
+        boolean found = false;
+        for (Animal animal : animals) {
+            if (animal != null) {
+                if (animal.getAge() >= 6) {
+                    System.out.println("- " + animal.getName() + ", возраст (лет): " + animal.getAge() + ".");
+                    found = true;
+                }
+            }
+        }
+        if (!found) {
+            System.out.println("В системе нет животных старше 6 лет.");
+        }
+    }
+
+    public static void findHeaviestAnimal(Animal[] animals) {
+        double maxWeight = 0;
+        for (Animal a : animals) {
+            if (a != null && a.getWeight() > maxWeight) {
+                maxWeight = a.getWeight();
+            }
+        }
+        System.out.println("Самый большой вес: " + maxWeight + " кг");
+        for (Animal animal : animals) {
+            if (animal != null && animal.getWeight() == maxWeight) {
+                System.out.println("Победитель: " + animal.getName());
+            }
+        }
+    }
+
+    public static void findFirstHeavyAnimal(Animal[] animals) {
+        if (animals == null) return;
+        for (Animal animal : animals) {
+            if (animal != null && animal.getWeight() > 6) {
+                System.out.println("Найдено: " + animal.getName() + " (" + animal.getWeight() + " кг)");
+                return;
+            }
+        }
+        System.out.println("Животных тяжелее 6 кг не обнаружено.");
+    }
+
+    public static boolean OldAnimals(Animal[] animals) {
+        if (animals == null) {
+            return false;
+        }
+        for (Animal animal : animals) {
+            if (animal != null && animal.getAge() > 6) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
