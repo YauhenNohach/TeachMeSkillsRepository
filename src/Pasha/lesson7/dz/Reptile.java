@@ -6,5 +6,4 @@ public class Reptile extends Carnivore {
         super(name, species, age, weight, food);
         this.howManyEggs = howManyEggs;
     }
-    public static void main(String[] args) {}
 }
