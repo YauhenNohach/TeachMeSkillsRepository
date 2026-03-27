@@ -31,5 +31,45 @@ public abstract class Car {
                 '}';
     }
 
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+
+
+    public int setYear(int year) {
+        if (year > 1960) {
+            return year;
+        } else {
+            System.err.println("Вашей машине пора на выставку: ");
+        }
+        return 0;
+    }
+
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public double getCostOfAuto() {
+        return costOfAuto;
+    }
+
+    public void setCostOfAuto(double costOfAuto) {
+        this.costOfAuto = costOfAuto;
+    }
+
     // много
 }

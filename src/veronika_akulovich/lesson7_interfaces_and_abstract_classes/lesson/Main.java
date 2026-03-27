@@ -47,6 +47,9 @@ public class Main {
         buses[2] = opel;
         buses[3] = lada;
 
+        audi.setYear(1961);
+        System.out.println(audi.getYear());
+
         Bus[] oldestCarOnSite = findCarBefore1992(buses);
         raisePriceOfBusses(buses);
 
