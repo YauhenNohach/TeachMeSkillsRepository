@@ -1,0 +1,27 @@
+package veronika_akulovich.lesson7_interfaces_and_abstract_classes.lesson;
+
+public class Bus extends Car {
+
+    int countPlaces;
+
+    public Bus() {
+    }
+
+    @Override
+    public void race() {
+        System.out.println("bus is top 1");
+    }
+
+//    public Tree(String name, double height) {
+//        this.name = name;
+//        this.height = height;
+//    }
+
+    public Bus(String model, int year, int speed, int countPlaces) {
+        super(model, year, speed);
+        this.countPlaces = countPlaces;
+    }
+    public void printInfoAboutBusses(){
+        System.out.println("model: " + super.model + ", year: " + super.year + " speed: " + super.speed + " countPlaces: " + this.countPlaces + " costOfAuto: " + super.costOfAuto);
+    }
+}
