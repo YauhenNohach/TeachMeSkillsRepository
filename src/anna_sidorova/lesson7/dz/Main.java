@@ -106,24 +106,24 @@ public class Main {
     }
 
     //Задание 8
-    static void findTheHeaviestAnimal(Animal[] allanimals) {
+    static Animal findTheHeaviestAnimal(Animal[] allanimals) {
         Animal max = allanimals[0];
         for (Animal an : allanimals) {
             if (an.animalWeight > max.animalWeight) {
                 max = an;
             }
         }
-        System.out.println("Самое тяжелое животное " + max);
+        return max;
     }
 
     //Задание 9
-    static void findFirstAnimalThatHeavierThanSixKilos(Animal[] allanimals) {
+    static Animal findFirstAnimalThatHeavierThanSixKilos(Animal[] allanimals) {
         for (Animal an : allanimals) {
             if (an.animalWeight > 6) {
-                System.out.println("Животное тяжелее 6 кг " + an);
-                break; //чтобы остановиться после первого
+                return an;
             }
         }
+        return null;
     }
 
     //Задание 10
