@@ -1,4 +1,4 @@
-package Pasha.dzFrom1To4;
+package Pasha;
 
 import java.util.Arrays;
 import java.util.Scanner;
