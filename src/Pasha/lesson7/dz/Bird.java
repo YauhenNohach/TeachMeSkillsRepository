@@ -6,7 +6,4 @@ public class Bird extends Graminivore {
         super(name, weight, age, species, food);
         this.singsBeautifully = singsBeautifully;
     }
-
-    public static void main(String[] args){
-    }
 }
