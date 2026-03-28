@@ -1,4 +1,4 @@
-package Pasha;
+package Pasha.dzFrom1To4;
 
 import java.util.Arrays;
 

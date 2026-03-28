@@ -3,9 +3,11 @@ package Pasha.lesson8.lesson;
 abstract class Account {
     double balance;
     Bank bank;
+    AccountType accountCurrency;
 
-    public Account(double balance, Bank bank) {
+    protected Account(double balance, Bank bank, AccountType accountCurrency) {
         this.balance = balance;
         this.bank = bank;
+        this.accountCurrency=accountCurrency;
     }
 }
