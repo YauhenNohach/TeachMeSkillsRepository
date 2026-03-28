@@ -12,7 +12,6 @@ public class Main {
         animals[3] = new Reptile("Leo", 8, 8, 54, 53.2);
         animals[4] = new Reptile("Leo2", 7, 20, 100, 53.2);
 
-
         // Ten tasks from Animal's methods
 
         // Для Жени--> я могу просто выводить метод через sout не используя создание новых переменных (закоменчены)
@@ -22,13 +21,13 @@ public class Main {
 
         double newWeight = 6.0;
 
-        Animal.changeAnimalWeight(animals[0], newWeight);
+        Methods.changeAnimalWeight(animals[0], newWeight);
         System.out.println(animals[0].getInfo());
 
         //Task 2
         System.out.println("\nTask 2: Sum of all animal's ages");
 
-        System.out.println("Sum of ages = " + Animal.sumOfAllAnimalAges(animals));
+        System.out.println("Sum of ages = " +  Methods.sumOfAllAnimalAges(animals));
 
         //Task 3
         System.out.println("\nTask 3: Search animals by SearchName");
@@ -36,41 +35,41 @@ public class Main {
         String searchName = "Leo";
 
         //Animal searched = Animal.findAnimalByName(animals, searchName);
-        System.out.println(Animal.findAnimalByName(animals, searchName));
+        System.out.println( Methods.findAnimalByName(animals, searchName));
 
         //Task 4
         System.out.println("\nTask 4: ");
-        Animal.compareTwoAnimals(animals[0], animals[1]);
+        Methods.compareTwoAnimals(animals[0], animals[1]);
 
         //Task 5
         System.out.println("\nTask 5: Average of all animal's weights");
 
         //double averageOfAllAnimalWeight = averageWeightOfAllAnimals(animals);
-        System.out.println("Average of weights = " + Animal.averageWeightOfAllAnimals(animals));
+        System.out.println("Average of weights = " +  Methods.averageWeightOfAllAnimals(animals));
 
         //Task 6
         System.out.println("\nTask 6: Amount heavier than average");
         // int countAnimalsHeavierThanAverage = Animal.countAnimalsHeavierThanAverage(animals);
-        System.out.println("Amount heavier than average = " + Animal.countAnimalsHeavierThanAverage(animals));
+        System.out.println("Amount heavier than average = " +  Methods.countAnimalsHeavierThanAverage(animals));
 
         //Task 7
         System.out.println("\nTask 7: Print animals older than 6 year");
-        Animal.printAnimalsOlderSixYears(animals);
+        Methods.printAnimalsOlderSixYears(animals);
 
         //Task 8
         System.out.println("\nTask 8: Most heavy animal");
         //Animal heaviestAnimal = Animal.mostHeavyAnimal(animals);
-        System.out.println(Animal.mostHeavyAnimal(animals));
+        System.out.println( Methods.mostHeavyAnimal(animals));
 
         //Task 9
         System.out.println("\nTask 9: Find first animal more than six");
         //  Animal animalMoreThanSixKG =findFirstAnimalMoreThanSixKG(animals);
-        System.out.println(Animal.findFirstAnimalMoreThanSixKG(animals));
+        System.out.println( Methods.findFirstAnimalMoreThanSixKG(animals));
 
         //Task 10
         System.out.println("\nTask 10: Does Animal exist Older than Six Year? ");
         //  boolean IsAnimalExistsOlderSixYears = Animal.isAnimalExistsOlderSixYears(animals);
-        System.out.println(Animal.isAnimalExistsOlderSixYears(animals));
+        System.out.println( Methods.isAnimalExistsOlderSixYears(animals));
 
     }
 }
