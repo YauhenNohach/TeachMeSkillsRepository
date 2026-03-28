@@ -7,8 +7,8 @@ public class CarService {
     public static void oldCard(Car[] cars) {
         int year = 1992;
         for (Car car: cars) {
-            if (car.year<=year) {
-                System.out.println("The car " + car.model + " is older than " + year);
+            if (car.getYear() <=year) {
+                System.out.println("The car " + car.getModel() + " is older than " + year);
             }
         }
     }
@@ -18,9 +18,10 @@ public class CarService {
         int carSpeed = 100;
         int newCarPrice = 150;
         for (int i=0; i<cars.length; i++) {
-            if (cars[i].speed >=carSpeed) {
-                cars[i].carPrice += newCarPrice;
-                System.out.println("Price updated for: " + cars[i].model + " Current price: " + cars[i].carPrice);
+            if (cars[i].getSpeed() >=carSpeed) {
+                double updatedPrice = cars[i].getCarPrice() + newCarPrice;
+                cars[i].setCarPrice(updatedPrice);
+                System.out.println("Price updated for: " + cars[i].getModel() + " Current price: " + cars[i].getCarPrice());
             }
         }
     }
@@ -28,8 +29,8 @@ public class CarService {
     //метод, который находит автомобиль по его модели
     public static void carSearch(Car[] cars, String model) {
         for (Car car : cars) {
-            if (model .equals(car.model)) {
-                System.out.println("Car " + model + " is found: " + car.model);
+            if (model .equals(car.getModel())) {
+                System.out.println("Car " + model + " is found: " + car.getModel());
             }
         }
     }
