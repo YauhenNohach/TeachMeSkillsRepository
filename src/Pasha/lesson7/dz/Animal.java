@@ -6,7 +6,6 @@ public abstract class Animal {
     int age;
     double weight;
 
-
     protected Animal(String name, String species, int age, double weight) {
         this.name = name;
         this.weight = weight;

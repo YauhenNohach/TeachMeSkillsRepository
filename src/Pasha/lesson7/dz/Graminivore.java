@@ -8,12 +8,6 @@ public class Graminivore extends Animal {
         super(name, species, age, weight);
         this.food = food;
     }
-
-    protected void animalSound(String animal) {
-
-    }
-
-    protected void animalFood(String food) {
-
-    }
+    protected void animalSound(String animal) {}
+    protected void animalFood(String food) {}
 }

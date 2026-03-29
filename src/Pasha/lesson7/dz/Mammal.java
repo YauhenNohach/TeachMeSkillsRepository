@@ -7,7 +7,5 @@ class Mammal extends Carnivore {
         super(name, species, age, weight, food);
         this.howManyMonthBreastfeeding = howManyMonthBreastfeeding;
     }
-
-    public static void main(String[] args) {}
 }
 

@@ -1,4 +1,4 @@
-package Pasha;
+package Pasha.dzFrom1To4;
 
 public class PashaDz2 {
     public static void main(String[] args) {
