@@ -1,7 +1,7 @@
 package yanina_savich.lesson8_oop_principles.lesson;
 
 public class TransferMoney {
-    protected static void transfer(Account from, Account to, double amount) {
+    public static void transfer(Account from, Account to, double amount) {
         if (!from.getAccountType().equals(to.getAccountType())){
             System.out.println("Разная валюта! Нельзя перевести");
             return;
