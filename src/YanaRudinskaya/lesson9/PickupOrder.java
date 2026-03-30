@@ -7,9 +7,10 @@ public class PickupOrder extends Order{
     }
     @Override
     public void validate() {
+        System.out.println("PickupOrder: доставка не применяется");
     }
     @Override
-    public void applyDelivery() {
+    public void applyDelivery() {System.out.println("PickupOrder: доставка не применяется");
     }
 
 }
