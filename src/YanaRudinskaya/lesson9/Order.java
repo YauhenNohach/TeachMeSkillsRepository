@@ -56,8 +56,6 @@ public abstract class Order {
         this.currencyType = currencyType;
     }
 
-    public abstract void validate();
-    public abstract void applyDelivery();
 }
 
 
