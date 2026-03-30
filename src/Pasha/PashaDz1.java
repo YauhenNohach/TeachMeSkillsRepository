@@ -1,3 +1,5 @@
+package Pasha;
+
 public class PashaDz1 {
     public static void main(String[] arg) {
         // Task 1

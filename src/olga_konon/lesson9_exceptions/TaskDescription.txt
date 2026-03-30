@@ -1,0 +1,60 @@
+1) Создать абстрактный класс Order с полями:
+double totalPrice
+Store store
+Product[] products (массив объектов внутри объекта)
+CurrencyType currencyType (EUR, USD, RUB) (Enum)
+2)Создать класс Store с полями:
+String name
+double discountPercent
+3) Применить инкапсуляцию (все поля private, геттеры/сеттеры)
+4) Создать наследников Order:
+OnlineOrder → добавить String deliveryAddress
+PickupOrder → без новых полей
+5) внтури класса Order создать статическое поле int countOrder и подсчитывать сколько заказов создано
+6) Создать интерфейс IStore:
+void applyDiscount(Order order);
+Реализовать его в Store
+7) Создать класс Product:
+String name
+double price
+8) Создать свои кастомные исключения:
+EmptyOrderException
+Если в заказе нет товаров
+InvalidPriceException
+Если у товара цена ≤ 0
+CurrencyMismatchException
+Если валюта заказа не поддерживается
+DeliveryException
+Если у OnlineOrder не указан адрес
+9) Бизнес-логика → OrderService
+Создать класс OrderService с методами:
+
+🔹calculateTotal(Order order)
+суммирует все products
+❗️ кидает EmptyOrderException, если товаров нет
+❗️ кидает InvalidPriceException, если цена некорректная
+
+🔹 processOrder(Order order)
+вызывает calculateTotal
+применяет скидку
+если OnlineOrder:
+проверить адрес → иначе DeliveryException
+добавить доставку (+5€)
+проверить валюту:
+если не EUR/USD/RUB → CurrencyMismatchException
+10)В main:
+
+создать несколько продуктов
+создать заказ
+обернуть вызов в try-catch
+try {
+    orderService.processOrder(order);
+} catch (EmptyOrderException e) {
+    System.out.println("Заказ пуст: " + e.getMessage());
+} catch (InvalidPriceException e) {
+    System.out.println("Ошибка цены: " + e.getMessage());
+} catch (DeliveryException e) {
+    System.out.println("Ошибка доставки: " + e.getMessage());
+} catch (CurrencyMismatchException e) {
+    System.out.println("Ошибка валюты: " + e.getMessage());
+}
