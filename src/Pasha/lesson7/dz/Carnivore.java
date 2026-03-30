@@ -8,16 +8,6 @@ public class Carnivore extends Animal {
         super(name, species, age, weight);
         this.food = food;
     }
-
-    public static void main(String[] args){
-    }
-
-    protected void animalSound(String animal) {
-        System.out.println(animal + "says: arrrrrr");
-    }
-
-
-    protected void animalFood(String food) {
-        System.out.println("eats " + food);
-    }
+    protected void animalSound(String animal) {}
+    protected void animalFood(String food) {}
 }
