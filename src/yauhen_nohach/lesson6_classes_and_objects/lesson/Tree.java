@@ -10,6 +10,8 @@ public class Tree {
 
     private LocalDate age;
 
+    public String[] names;
+
     public Tree() {
     }
 
@@ -59,7 +61,23 @@ public class Tree {
 //    }
 
 
+    public String[] getNames() {
+        return names;
+    }
+
+    public void setNames(String[] names) {
+        if (names.length > 0){
+            this.names = names;
+        } else {
+            System.out.println("array is empty");
+        }
+
+    }
+
     public void setHeight(double height) {
+        if (height < 0){
+            throw new IllegalArgumentException("height must be more than 0");
+        }
         this.height = height;
     }
 

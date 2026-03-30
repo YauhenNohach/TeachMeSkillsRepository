@@ -2,9 +2,16 @@ package yauhen_nohach.lesson7_interfaces_and_abstract_classes.lesson;
 
 public class Bus extends Car {
 
+    public static int countPeople = 0;
+
     int countPlaces;
 
     public Bus() {
+        countPeople += 60;
+    }
+
+    public static void infoAboutBus(){
+        System.out.println("Bus info about bus");
     }
 
     @Override
