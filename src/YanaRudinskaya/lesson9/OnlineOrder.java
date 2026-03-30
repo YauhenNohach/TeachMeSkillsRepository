@@ -18,13 +18,13 @@ public class OnlineOrder extends Order{
     public void setDeliveryAddress(String deliveryAddress) {
         this.deliveryAddress = deliveryAddress;
     }
-
+    @Override
     public void validate() {
         if (deliveryAddress == null ) {
             throw new DeliveryException("Адрес доставки не указан");
         }
     }
-
+    @Override
     public void applyDelivery() {
         setTotalPrice(getTotalPrice() + 5);
     }
