@@ -12,6 +12,7 @@ public abstract class Order {
         this.store = store;
         this.products = products;
         this.currencyType = currencyType;
+        this.countOrder++;
     }
 
     protected double getTotalPrice() {
@@ -49,11 +50,5 @@ public abstract class Order {
     protected int getCountOrder(Product[] products) {
         countProducts(products);
         return countOrder;
-    }
-
-    protected void countProducts(Product[] products) {
-        for (Product product: products) {
-            countOrder++;
-        }
     }
 }
