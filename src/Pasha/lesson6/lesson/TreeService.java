@@ -1,4 +1,4 @@
-package yauhen_nohach.lesson6_classes_and_objects.lesson;
+package Pasha.lesson6.lesson;
 
 public class TreeService {
 
@@ -7,9 +7,9 @@ public class TreeService {
         Tree maxTree = trees[0];
         for (int i = 1; i < trees.length; i++) {
             //  bereza
-//            if (trees[i].height > maxTree.height){
-//                maxTree = trees[i];
-//            }
+            if (trees[i].height > maxTree.height){
+                maxTree = trees[i];
+            }
         }
         return maxTree;
     }
