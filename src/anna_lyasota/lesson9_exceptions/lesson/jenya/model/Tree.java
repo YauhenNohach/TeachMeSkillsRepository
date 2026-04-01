@@ -1,11 +1,11 @@
-package yauhen_nohach.lesson10_string_processing.dz.model;
+package anna_lyasota.lesson9_exceptions.lesson.jenya.model;
 
 
-import yauhen_nohach.lesson10_string_processing.dz.model.type.TreeType;
-//                     String       Long
-public abstract class Tree {//<T, E extends Number> implements BaseModel<Integer> {
+import anna_lyasota.lesson9_exceptions.lesson.jenya.model.type.TreeType;
 
-    private Integer id;
+public abstract class Tree {
+
+    private int id;
     private String name;
     private TreeType typeTree;
 

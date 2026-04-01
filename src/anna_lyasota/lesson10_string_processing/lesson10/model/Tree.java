@@ -1,11 +1,8 @@
-package yauhen_nohach.lesson10_string_processing.dz.model;
+package anna_lyasota.lesson10_string_processing.lesson10.model;
 
+public class Tree {
 
-import yauhen_nohach.lesson10_string_processing.dz.model.type.TreeType;
-//                     String       Long
-public abstract class Tree {//<T, E extends Number> implements BaseModel<Integer> {
-
-    private Integer id;
+    private int id;
     private String name;
     private TreeType typeTree;
 
@@ -51,3 +48,4 @@ public abstract class Tree {//<T, E extends Number> implements BaseModel<Integer
                 '}';
     }
 }
+
