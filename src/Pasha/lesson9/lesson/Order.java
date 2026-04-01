@@ -48,7 +48,7 @@ public abstract class Order {
     }
 
     protected int getCountOrder(Product[] products) {
-        countProducts(products);
+        countOrder++;
         return countOrder;
     }
 }
