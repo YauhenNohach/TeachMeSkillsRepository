@@ -1,6 +1,7 @@
 package anna_lyasota.lesson10_string_processing.lesson10.service;
 
 import anna_lyasota.lesson10_string_processing.lesson10.exception.TreeArrayFullException;
+import anna_lyasota.lesson10_string_processing.lesson10.exception.TreeNotFoundException;
 import anna_lyasota.lesson10_string_processing.lesson10.model.Tree;
 
 public class TreeService implements ITree {
@@ -19,8 +20,9 @@ public class TreeService implements ITree {
         Tree tree = find(trees, id);
 
         if (tree == null) {
-            System.out.println("Дерево не найдено");
-            return;
+            throw  new TreeNotFoundException("tree not found for id: " + id);
+//            System.out.println("Дерево не найдено");
+//            return;
         }
 
         if (newName != null && !newName.isEmpty()) {
@@ -29,10 +31,11 @@ public class TreeService implements ITree {
     }
 
 
-    public void printAll(anna_lyasota.lesson10_string_processing.lesson10.model.Tree[] trees) {
+    public void printAll(Tree[] trees) {
+
     }
 
-    public anna_lyasota.lesson10_string_processing.lesson10.model.Tree find(anna_lyasota.lesson10_string_processing.lesson10.model.Tree[] trees, int i) {
+    public Tree find(Tree[] trees, int i) {
         return null;
     }
 
