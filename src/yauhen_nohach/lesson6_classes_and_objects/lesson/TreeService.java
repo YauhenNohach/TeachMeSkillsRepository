@@ -7,9 +7,9 @@ public class TreeService {
         Tree maxTree = trees[0];
         for (int i = 1; i < trees.length; i++) {
             //  bereza
-            if (trees[i].height > maxTree.height){
-                maxTree = trees[i];
-            }
+//            if (trees[i].height > maxTree.height){
+//                maxTree = trees[i];
+//            }
         }
         return maxTree;
     }
