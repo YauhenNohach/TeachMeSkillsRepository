@@ -11,11 +11,21 @@ public class Main {
         dub.treeName = "dub";
         dub.treeHeight = 200;
 
-        Tree [] trees = new Tree[2];
+        Tree[] trees = new Tree[2];
         trees[0] = bereza;
         trees[1] = dub;
 
-        Tree tallestTree = Tree.maxHeightTree(trees);
+        Tree tallestTree = maxHeightTree(trees);
         Tree.treeInfo(tallestTree);
+    }
+
+    public static Tree maxHeightTree(Tree[] trees) {
+        Tree max = trees[0];
+        for (int i = 0; i < trees.length; i++) {
+            if (trees[i].treeHeight > max.treeHeight) {
+                max = trees[i];
+            }
+        }
+        return max;
     }
 }
