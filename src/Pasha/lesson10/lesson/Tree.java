@@ -1,6 +1,6 @@
 package Pasha.lesson10.lesson;
 
-abstract class Tree {
+public abstract class Tree {
     private int id;
     private String name;
     private TypeTree typeTree;

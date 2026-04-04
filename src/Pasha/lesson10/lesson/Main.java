@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) {
 
         TreeService treeService = new TreeService();
-        // Array creation.
         Tree[] forest = new Tree[11];
         forest[0] = new OrdinaryTree(1, "Common Oak", TypeTree.Oak);
         forest[1] = new ChristmasTree(2, "Festive Pine", TypeTree.Pine);
