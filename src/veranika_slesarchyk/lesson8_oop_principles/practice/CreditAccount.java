@@ -7,4 +7,8 @@ public class CreditAccount extends Account{
         super(balance, bank);
         this.creditLimit = creditLimit;
     }
+
+    public double getcreditLimit() {
+        return 0;
+    }
 }
