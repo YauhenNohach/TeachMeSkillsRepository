@@ -2,7 +2,7 @@ package anna_sidorova.lesson8.lessons;
 
 public class SavingAccount extends Account {
 
-    double savingLimit;
+    private double savingLimit;
 
 
     public SavingAccount(double balance, Bank bank, String accountType) {
