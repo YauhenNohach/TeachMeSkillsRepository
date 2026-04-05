@@ -1,12 +1,19 @@
-package yauhen_nohach.lesson7_interfaces_and_abstract_classes.lesson;
+package anna_sidorova.lesson7.lessons;
+public class Car {
 
-public abstract class Car implements IDrive, ICar{
-
-    public String model;
+    String model;
     public int year;
     int speed;
+    double carPrice;
 
     public Car() {
+    }
+
+    public Car(String model, int year, int speed, double carPrice) {
+        this.model = model;
+        this.year = year;
+        this.speed = speed;
+        this.carPrice = carPrice;
     }
 
     public Car(String model, int year, int speed) {
@@ -16,8 +23,10 @@ public abstract class Car implements IDrive, ICar{
     }
 
     public void drive(){
-        System.out.println("I drive abstract car");
+        System.out.println("I drive car");
     }
+
+  //  public abstract void race();
 
     @Override
     public String toString() {
