@@ -2,15 +2,15 @@ package veranika_slesarchyk.lesson8_oop_principles.practice;
 
 public class MainforBank {
     public static void main(String[] args) {
-        Bank bankA = new Bank(2.0, "Bank A");
-        Bank bankB = new Bank(3.0, "Bank B");
+        Bank bank1 = new Bank(5, "BankA");
+        Bank bank2 = new Bank(10, "BankB");
 
-        Account creditAcc = new CreditAccount(100, bankA, 200);
-        Account savingAcc = new SavingAccount(50, bankB);
+        Account acc1 = new CreditAccount(1000, bank1, "USD", 500);
+        Account acc2 = new SavingAccount(500, bank2, "USD");
 
-        TransferMoney.transfer(creditAcc, savingAcc, 80);
+        TransferMoney.transfer(acc1, acc2, 300);
 
-        System.out.println("Баланс отправителя: " + creditAcc.getBalance());
-        System.out.println("Баланс получателя: " + savingAcc.getBalance());
+        System.out.println("Acc1: " + acc1.getBalance());
+        System.out.println("Acc2: " + acc2.getBalance());
     }
 }

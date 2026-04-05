@@ -3,12 +3,12 @@ package veranika_slesarchyk.lesson8_oop_principles.practice;
 public class Account {
     private double balance;
     private Bank bank;
-    private String accountType; // "USD", "EUR", "RUB"
+    public String accountType; // "USD", "EUR", "RUB"
 
-    public Account(double balance, Bank bank) {
+    public Account(double balance, Bank bank, String accountType) {
         this.balance = balance;
         this.bank = bank;
-        this.accountType = accountType;
+        this.accountType = this.accountType;
     }
 
     public double getBalance() {
