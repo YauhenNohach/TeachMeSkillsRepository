@@ -1,9 +1,4 @@
-package yauhen_nohach.lesson10_string_processing.dz;
-
-import yauhen_nohach.lesson10_string_processing.dz.model.BaseModel;
-import yauhen_nohach.lesson10_string_processing.dz.model.ChristmasTree;
-import yauhen_nohach.lesson10_string_processing.dz.model.Tree;
-import yauhen_nohach.lesson10_string_processing.dz.service.TreeService;
+package anna_lyasota.lesson9_exceptions.lesson.jenya;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,12 +21,5 @@ public class Main {
 //        } catch (TreeNotFoundException e){
 //
 //        } catch (Exception e){
-
-//        Tree<String> tree = new ChristmasTree(24);
-//        Tree<Integer> tree2 = new ChristmasTree(24);
-//        Tree<String, Long> tree2 = new ChristmasTree(24);
-
-//        BaseModel<Integer> model = /*Tree*/ new ChristmasTree(12);
-
     }
 }
